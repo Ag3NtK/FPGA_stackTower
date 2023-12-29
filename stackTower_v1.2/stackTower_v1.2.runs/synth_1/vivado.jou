@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Dec 29 17:07:14 2023
+# Process ID: 18840
+# Current directory: C:/hlocal/TC/stackTower_v1.1/stackTower_v1.1.runs/synth_1
+# Command line: vivado.exe -log sintesis_stackTower.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sintesis_stackTower.tcl
+# Log file: C:/hlocal/TC/stackTower_v1.1/stackTower_v1.1.runs/synth_1/sintesis_stackTower.vds
+# Journal file: C:/hlocal/TC/stackTower_v1.1/stackTower_v1.1.runs/synth_1\vivado.jou
+# Running On: DESKTOP-490OS2L, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34118 MB
+#-----------------------------------------------------------
+source sintesis_stackTower.tcl -notrace
