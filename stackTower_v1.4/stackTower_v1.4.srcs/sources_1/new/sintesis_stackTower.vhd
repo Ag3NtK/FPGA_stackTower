@@ -78,5 +78,5 @@ begin
     stackTowerInsts_displayce : stackTower Port Map (rst, clk, jugar, inicio, sw_dificultad, dificultad, puntuacion, leds);
 
     displays_inst:  displays PORT MAP (rst, clk, puntuacion, "0000", "0000", dificultad_display, display, s_display);
-    
+
 end Behavioral;
