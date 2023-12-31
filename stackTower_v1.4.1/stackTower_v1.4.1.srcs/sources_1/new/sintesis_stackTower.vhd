@@ -77,6 +77,6 @@ begin
     debouncerInsts_displayce2: debouncer Port Map (reset_n, clk, boton_inicio, open, open, inicio);
     stackTowerInsts_displayce : stackTower Port Map (rst, clk, jugar, inicio, sw_dificultad, dificultad, puntuacion, leds);
 
-    displays_inst:  displays PORT MAP (rst, clk, puntuacion, "1111", "1111", dificultad_display, display, s_display);
+    displays_inst:  displays PORT MAP (rst, clk, puntuacion, "0000", "0000", dificultad_display, display, s_display);
 
 end Behavioral;
