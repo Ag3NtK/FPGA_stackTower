@@ -10,8 +10,6 @@ entity displays is
         clk : in STD_LOGIC;       
         digito_0 : in  STD_LOGIC_VECTOR (3 downto 0);
         digito_1 : in  STD_LOGIC_VECTOR (3 downto 0);
-        digito_2 : in  STD_LOGIC_VECTOR (3 downto 0);
-        digito_3 : in  STD_LOGIC_VECTOR (3 downto 0);
         display : out  STD_LOGIC_VECTOR (6 downto 0);
         display_enable : out  STD_LOGIC_VECTOR (3 downto 0)
      );
@@ -26,8 +24,6 @@ architecture Behavioral of displays is
 
     signal display_0 : STD_LOGIC_VECTOR (6 downto 0);
     signal display_1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal display_2 : STD_LOGIC_VECTOR (6 downto 0);
-    signal display_3 : STD_LOGIC_VECTOR (6 downto 0);
     signal contador_refresco : STD_LOGIC_VECTOR (19 downto 0);
     
 
@@ -35,13 +31,9 @@ begin
 
     conv_7seg_digito_0 : conv_7seg port map(x => digito_0, display => display_0);
     conv_7seg_digito_1 : conv_7seg port map(x => digito_1, display => display_1);
-    conv_7seg_digito_2 : conv_7seg port map(x => digito_2, display => display_2);
-    conv_7seg_digito_3 : conv_7seg port map(x => digito_3, display => display_3);
 
-    display <=  display_0 when (contador_refresco(19 downto 18) = "00") else
-                display_1 when (contador_refresco(19 downto 18) = "01") else
-                display_2 when (contador_refresco(19 downto 18) = "10") else
-                display_3;
+    display <=  display_0 when (contador_refresco(19) = '0') else
+                display_1 when (contador_refresco(19) = '1');
 
     process(clk)
     begin
@@ -54,9 +46,7 @@ begin
         end if;
     end process;
 
-    display_enable <=   "1110" when (contador_refresco(19 downto 18) = "00") else
-                        "1111" when (contador_refresco(19 downto 18) = "01") else
-                        "1111" when (contador_refresco(19 downto 18) = "10") else
+    display_enable <=   "1110" when (contador_refresco(19) = '0') else
                         "0111";
 
 end Behavioral;

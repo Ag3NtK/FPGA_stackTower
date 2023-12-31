@@ -52,8 +52,6 @@ architecture Behavioral of sintesis_stackTower is
             clk : in STD_LOGIC;       
             digito_0 : in  STD_LOGIC_VECTOR (3 downto 0);
             digito_1 : in  STD_LOGIC_VECTOR (3 downto 0);
-            digito_2 : in  STD_LOGIC_VECTOR (3 downto 0);
-            digito_3 : in  STD_LOGIC_VECTOR (3 downto 0);
             display : out  STD_LOGIC_VECTOR (6 downto 0);
             display_enable : out  STD_LOGIC_VECTOR (3 downto 0)
          );
@@ -77,6 +75,6 @@ begin
     debouncerInsts_displayce2: debouncer Port Map (reset_n, clk, boton_inicio, open, open, inicio);
     stackTowerInsts_displayce : stackTower Port Map (rst, clk, jugar, inicio, sw_dificultad, dificultad, puntuacion, leds);
 
-    displays_inst:  displays PORT MAP (rst, clk, puntuacion, "0000", "0000", dificultad_display, display, s_display);
+    displays_inst:  displays PORT MAP (rst, clk, puntuacion, dificultad_display, display, s_display);
 
 end Behavioral;

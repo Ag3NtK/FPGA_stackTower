@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1704031836">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1704033004">
   <File Type="ROUTE-PWR" Name="sintesis_stackTower_power_routed.rpt"/>
   <File Type="PA-TCL" Name="sintesis_stackTower.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="sintesis_stackTower_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="sintesis_stackTower_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="sintesis_stackTower.msk"/>
-  <File Type="ROUTE-CLK" Name="sintesis_stackTower_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="sintesis_stackTower.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sintesis_stackTower_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="sintesis_stackTower.bit"/>
-  <File Type="BG-DRC" Name="sintesis_stackTower.drc"/>
-  <File Type="BG-BGN" Name="sintesis_stackTower.bgn"/>
-  <File Type="BG-BIN" Name="sintesis_stackTower.bin"/>
-  <File Type="BITSTR-RBT" Name="sintesis_stackTower.rbt"/>
-  <File Type="BITSTR-NKY" Name="sintesis_stackTower.nky"/>
-  <File Type="BITSTR-BMM" Name="sintesis_stackTower_bd.bmm"/>
+  <File Type="OPT-RQA-PB" Name="sintesis_stackTower_rqa_opted.pb"/>
   <File Type="BITSTR-MMI" Name="sintesis_stackTower.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="sintesis_stackTower_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="sintesis_stackTower.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="sintesis_stackTower.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sintesis_stackTower_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="sintesis_stackTower_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="sintesis_stackTower_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="sintesis_stackTower_opt.dcp"/>
   <File Type="OPT-DRC" Name="sintesis_stackTower_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="sintesis_stackTower.hwdef"/>
+  <File Type="PWROPT-DCP" Name="sintesis_stackTower_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="sintesis_stackTower_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="sintesis_stackTower_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="sintesis_stackTower_placed.dcp"/>
   <File Type="PLACE-IO" Name="sintesis_stackTower_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="sintesis_stackTower_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="sintesis_stackTower_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="sintesis_stackTower_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="sintesis_stackTower_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="sintesis_stackTower_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="sintesis_stackTower_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="sintesis_stackTower.bin"/>
+  <File Type="PLACE-TIMING" Name="sintesis_stackTower_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="sintesis_stackTower_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="sintesis_stackTower_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sintesis_stackTower_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="sintesis_stackTower.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="sintesis_stackTower_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="sintesis_stackTower_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="sintesis_stackTower_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="sintesis_stackTower.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="sintesis_stackTower_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sintesis_stackTower_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="sintesis_stackTower_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sintesis_stackTower_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="sintesis_stackTower_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="sintesis_stackTower_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="sintesis_stackTower_power_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="sintesis_stackTower_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="sintesis_stackTower_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sintesis_stackTower_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sintesis_stackTower_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="sintesis_stackTower_rqs_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="sintesis_stackTower_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="sintesis_stackTower_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="sintesis_stackTower_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="sintesis_stackTower_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="sintesis_stackTower_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="sintesis_stackTower_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="sintesis_stackTower_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="sintesis_stackTower_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="sintesis_stackTower_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="sintesis_stackTower_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="sintesis_stackTower_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="sintesis_stackTower_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="sintesis_stackTower_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="sintesis_stackTower_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="sintesis_stackTower_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="sintesis_stackTower_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="sintesis_stackTower_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="sintesis_stackTower_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="sintesis_stackTower_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sintesis_stackTower_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sintesis_stackTower_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sintesis_stackTower_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sintesis_stackTower_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sintesis_stackTower_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="sintesis_stackTower.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sintesis_stackTower_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="sintesis_stackTower_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sintesis_stackTower_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="sintesis_stackTower_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sintesis_stackTower_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="sintesis_stackTower.nky"/>
+  <File Type="BITSTR-BMM" Name="sintesis_stackTower_bd.bmm"/>
   <File Type="PDI-FILE" Name="sintesis_stackTower.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="sintesis_stackTower_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="sintesis_stackTower_pld.pdi"/>
@@ -66,6 +73,13 @@
   <File Type="RNPI_FILE" Name="sintesis_stackTower.rnpi"/>
   <File Type="NPI_FILE" Name="sintesis_stackTower.npi"/>
   <File Type="RBD_FILE" Name="sintesis_stackTower.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sintesis_stackTower.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="sintesis_stackTower.sysdef"/>
+  <File Type="BG-BGN" Name="sintesis_stackTower.bgn"/>
+  <File Type="BG-DRC" Name="sintesis_stackTower.drc"/>
+  <File Type="RDI-RDI" Name="sintesis_stackTower.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="sintesis_stackTower_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="sintesis_stackTower_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>

@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun Dec 31 15:16:30 2023
-# Process ID: 5756
+# Start of session at: Sun Dec 31 15:30:46 2023
+# Process ID: 10484
 # Current directory: C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/impl_1
 # Command line: vivado.exe -log sintesis_stackTower.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sintesis_stackTower.tcl -notrace
 # Log file: C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/impl_1/sintesis_stackTower.vdi

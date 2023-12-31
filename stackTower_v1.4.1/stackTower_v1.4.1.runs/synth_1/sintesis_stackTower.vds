@@ -3,18 +3,17 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun Dec 31 15:10:38 2023
-# Process ID: 9532
-# Current directory: C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.runs/synth_1
+# Start of session at: Sun Dec 31 15:30:07 2023
+# Process ID: 17264
+# Current directory: C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/synth_1
 # Command line: vivado.exe -log sintesis_stackTower.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sintesis_stackTower.tcl
-# Log file: C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.runs/synth_1/sintesis_stackTower.vds
-# Journal file: C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.runs/synth_1\vivado.jou
+# Log file: C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/synth_1/sintesis_stackTower.vds
+# Journal file: C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/synth_1\vivado.jou
 # Running On: DESKTOP-490OS2L, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34118 MB
 #-----------------------------------------------------------
 source sintesis_stackTower.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 456.793 ; gain = 163.211
-Command: read_checkpoint -auto_incremental -incremental C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/utils_1/imports/synth_1/sintesis_stackTower.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/utils_1/imports/synth_1/sintesis_stackTower.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/utils_1/imports/synth_1/sintesis_stackTower.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/utils_1/imports/synth_1/sintesis_stackTower.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top sintesis_stackTower -part xc7a35tcpg236-1
 Starting synth_design
@@ -25,105 +24,103 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 20096
+INFO: [Synth 8-7075] Helper process launched with PID 21296
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1273.379 ; gain = 410.426
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1273.504 ; gain = 411.977
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'sintesis_stackTower' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/sintesis_stackTower.vhd:18]
-INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'debouncerInsts_displayce1' of component 'debouncer' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/sintesis_stackTower.vhd:76]
-INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/debouncer.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/debouncer.vhd:16]
-INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'debouncerInsts_displayce2' of component 'debouncer' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/sintesis_stackTower.vhd:77]
-INFO: [Synth 8-3491] module 'stackTower' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/stackTower.vhd:5' bound to instance 'stackTowerInsts_displayce' of component 'stackTower' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/sintesis_stackTower.vhd:78]
-INFO: [Synth 8-638] synthesizing module 'stackTower' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/stackTower.vhd:18]
-INFO: [Synth 8-3491] module 'ruta_datos' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/ruta_datos.vhd:5' bound to instance 'C_RUTA_DATOS' of component 'ruta_datos' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/stackTower.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'ruta_datos' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/ruta_datos.vhd:19]
-INFO: [Synth 8-3491] module 'divisor' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/divisor.vhd:5' bound to instance 'C_DIVISOR' of component 'divisor' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/ruta_datos.vhd:77]
-INFO: [Synth 8-638] synthesizing module 'divisor' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/divisor.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'divisor' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/divisor.vhd:14]
-INFO: [Synth 8-3491] module 'generador_secuencias' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:4' bound to instance 'C_GENERADOR_SECUENCIAS' of component 'generador_secuencias' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/ruta_datos.vhd:79]
-INFO: [Synth 8-638] synthesizing module 'generador_secuencias' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:15]
-INFO: [Synth 8-3491] module 'registro_desplazamiento' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/registro_desplazamiento.vhd:4' bound to instance 'SEC_JUGANDO' of component 'registro_desplazamiento' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:45]
-INFO: [Synth 8-638] synthesizing module 'registro_desplazamiento' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/registro_desplazamiento.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'registro_desplazamiento' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/registro_desplazamiento.vhd:13]
-INFO: [Synth 8-3491] module 'biestable' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/biestable.vhd:4' bound to instance 'SEC_PIERDE_GANA' of component 'biestable' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'biestable' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/biestable.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'biestable' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/biestable.vhd:14]
-WARNING: [Synth 8-614] signal 'direccion' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:50]
-WARNING: [Synth 8-614] signal 'leds_jugando' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:63]
-WARNING: [Synth 8-614] signal 'leds_pausado' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:63]
-WARNING: [Synth 8-614] signal 'leds_pierde_gana' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:63]
-INFO: [Synth 8-256] done synthesizing module 'generador_secuencias' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:15]
-INFO: [Synth 8-3491] module 'contadorMod10' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/contadorMod10.vhd:6' bound to instance 'C_CONT_2HZ' of component 'contadorMod10' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/ruta_datos.vhd:81]
-INFO: [Synth 8-638] synthesizing module 'contadorMod10' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/contadorMod10.vhd:16]
-WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/contadorMod10.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'contadorMod10' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/contadorMod10.vhd:16]
-INFO: [Synth 8-3491] module 'sumadorPuntuacion' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/sumadorPuntuacion.vhd:6' bound to instance 'SUMA_PUNTUACION' of component 'sumadorPuntuacion' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/ruta_datos.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'sumadorPuntuacion' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/sumadorPuntuacion.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'sumadorPuntuacion' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/sumadorPuntuacion.vhd:15]
-WARNING: [Synth 8-614] signal 'sw_dificultad' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/ruta_datos.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'ruta_datos' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/ruta_datos.vhd:19]
-INFO: [Synth 8-3491] module 'controller' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/controller.vhd:5' bound to instance 'C_CONTROLLER' of component 'controller' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/stackTower.vhd:56]
-INFO: [Synth 8-638] synthesizing module 'controller' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/controller.vhd:18]
-WARNING: [Synth 8-614] signal 'puntuacion' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/controller.vhd:45]
-WARNING: [Synth 8-614] signal 'fallo' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/controller.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'controller' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/controller.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'stackTower' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/stackTower.vhd:18]
-INFO: [Synth 8-3491] module 'displays' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/displays.vhd:7' bound to instance 'displays_inst' of component 'displays' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/sintesis_stackTower.vhd:80]
-INFO: [Synth 8-638] synthesizing module 'displays' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/displays.vhd:20]
-INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_0' of component 'conv_7seg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/displays.vhd:36]
-INFO: [Synth 8-638] synthesizing module 'conv_7seg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/conv_7seg.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'conv_7seg' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/conv_7seg.vhd:37]
-INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_1' of component 'conv_7seg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/displays.vhd:37]
-INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_2' of component 'conv_7seg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/displays.vhd:38]
-INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_3' of component 'conv_7seg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/displays.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'displays' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/displays.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'sintesis_stackTower' (0#1) [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/sintesis_stackTower.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'sintesis_stackTower' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sintesis_stackTower.vhd:18]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'debouncerInsts_displayce1' of component 'debouncer' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sintesis_stackTower.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/debouncer.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/debouncer.vhd:16]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'debouncerInsts_displayce2' of component 'debouncer' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sintesis_stackTower.vhd:75]
+INFO: [Synth 8-3491] module 'stackTower' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/stackTower.vhd:5' bound to instance 'stackTowerInsts_displayce' of component 'stackTower' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sintesis_stackTower.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'stackTower' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/stackTower.vhd:18]
+INFO: [Synth 8-3491] module 'ruta_datos' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd:5' bound to instance 'C_RUTA_DATOS' of component 'ruta_datos' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/stackTower.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'ruta_datos' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd:19]
+INFO: [Synth 8-3491] module 'divisor' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/divisor.vhd:5' bound to instance 'C_DIVISOR' of component 'divisor' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'divisor' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/divisor.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'divisor' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/divisor.vhd:14]
+INFO: [Synth 8-3491] module 'generador_secuencias' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:4' bound to instance 'C_GENERADOR_SECUENCIAS' of component 'generador_secuencias' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'generador_secuencias' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:15]
+INFO: [Synth 8-3491] module 'registro_desplazamiento' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/registro_desplazamiento.vhd:4' bound to instance 'SEC_JUGANDO' of component 'registro_desplazamiento' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'registro_desplazamiento' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/registro_desplazamiento.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'registro_desplazamiento' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/registro_desplazamiento.vhd:13]
+INFO: [Synth 8-3491] module 'biestable' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/biestable.vhd:4' bound to instance 'SEC_PIERDE_GANA' of component 'biestable' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'biestable' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/biestable.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'biestable' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/biestable.vhd:14]
+WARNING: [Synth 8-614] signal 'direccion' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:50]
+WARNING: [Synth 8-614] signal 'leds_jugando' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:63]
+WARNING: [Synth 8-614] signal 'leds_pausado' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:63]
+WARNING: [Synth 8-614] signal 'leds_pierde_gana' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'generador_secuencias' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:15]
+INFO: [Synth 8-3491] module 'contadorMod10' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/contadorMod10.vhd:6' bound to instance 'C_CONT_2HZ' of component 'contadorMod10' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'contadorMod10' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/contadorMod10.vhd:16]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/contadorMod10.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'contadorMod10' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/contadorMod10.vhd:16]
+INFO: [Synth 8-3491] module 'sumadorPuntuacion' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sumadorPuntuacion.vhd:6' bound to instance 'SUMA_PUNTUACION' of component 'sumadorPuntuacion' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'sumadorPuntuacion' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sumadorPuntuacion.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'sumadorPuntuacion' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sumadorPuntuacion.vhd:15]
+WARNING: [Synth 8-614] signal 'sw_dificultad' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'ruta_datos' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd:19]
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/controller.vhd:5' bound to instance 'C_CONTROLLER' of component 'controller' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/stackTower.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/controller.vhd:18]
+WARNING: [Synth 8-614] signal 'puntuacion' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/controller.vhd:45]
+WARNING: [Synth 8-614] signal 'fallo' is read in the process but is not in the sensitivity list [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/controller.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'controller' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/controller.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'stackTower' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/stackTower.vhd:18]
+INFO: [Synth 8-3491] module 'displays' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/displays.vhd:7' bound to instance 'displays_inst' of component 'displays' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sintesis_stackTower.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'displays' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/displays.vhd:18]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_0' of component 'conv_7seg' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/displays.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'conv_7seg' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/conv_7seg.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'conv_7seg' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/conv_7seg.vhd:37]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/conv_7seg.vhd:32' bound to instance 'conv_7seg_digito_1' of component 'conv_7seg' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/displays.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'displays' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/displays.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'sintesis_stackTower' (0#1) [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sintesis_stackTower.vhd:18]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1365.422 ; gain = 502.469
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1365.738 ; gain = 504.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1365.422 ; gain = 502.469
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1365.738 ; gain = 504.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1365.422 ; gain = 502.469
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1365.738 ; gain = 504.211
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1365.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1365.738 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/constrs_1/new/pines_proyecto_final.xdc]
-Finished Parsing XDC File [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/constrs_1/new/pines_proyecto_final.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/constrs_1/new/pines_proyecto_final.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sintesis_stackTower_propImpl.xdc].
+Parsing XDC File [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/constrs_1/new/pines_proyecto_final.xdc]
+Finished Parsing XDC File [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/constrs_1/new/pines_proyecto_final.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/constrs_1/new/pines_proyecto_final.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sintesis_stackTower_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/sintesis_stackTower_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1415.586 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1470.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1415.586 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1470.211 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'controller.state_reg' in module 'debouncer'
 INFO: [Synth 8-802] inferred FSM for state register 'ESTADO_reg' in module 'controller'
@@ -136,11 +133,11 @@ INFO: [Synth 8-802] inferred FSM for state register 'ESTADO_reg' in module 'cont
     depressiondebouncing |                               11 |                               11
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'controller.state_reg' using encoding 'sequential' in module 'debouncer'
-WARNING: [Synth 8-327] inferring latch for variable 'fallo_reg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:74]
-WARNING: [Synth 8-327] inferring latch for variable 'leds_pausado_reg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:70]
-WARNING: [Synth 8-327] inferring latch for variable 'direccion_reg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/generador_secuencias.vhd:45]
-WARNING: [Synth 8-327] inferring latch for variable 'dificultad_aux_reg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/ruta_datos.vhd:75]
-WARNING: [Synth 8-327] inferring latch for variable 'enablesAux_reg' [C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.srcs/sources_1/new/controller.vhd:25]
+WARNING: [Synth 8-327] inferring latch for variable 'fallo_reg' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 'leds_pausado_reg' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'direccion_reg' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'dificultad_aux_reg' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'enablesAux_reg' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/controller.vhd:25]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -152,8 +149,9 @@ WARNING: [Synth 8-327] inferring latch for variable 'enablesAux_reg' [C:/hlocal/
                       s4 |                           100000 |                              100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'ESTADO_reg' using encoding 'one-hot' in module 'controller'
+WARNING: [Synth 8-327] inferring latch for variable 'display_reg' [C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/displays.vhd:35]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -171,11 +169,10 @@ Detailed RTL Component Info :
 	   2 Input   16 Bit        Muxes := 3     
 	   4 Input   16 Bit        Muxes := 1     
 	   6 Input    7 Bit        Muxes := 2     
-	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
 	   6 Input    6 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 7     
-	   2 Input    4 Bit        Muxes := 1     
-	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
 	   4 Input    2 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 9     
 	   2 Input    1 Bit        Muxes := 6     
@@ -199,26 +196,33 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design sintesis_stackTower has port s_display[2] driven by constant 1
 WARNING: [Synth 8-3917] design sintesis_stackTower has port s_display[1] driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (displays_inst/display_reg[6]) is unused and will be removed from module sintesis_stackTower.
+WARNING: [Synth 8-3332] Sequential element (displays_inst/display_reg[5]) is unused and will be removed from module sintesis_stackTower.
+WARNING: [Synth 8-3332] Sequential element (displays_inst/display_reg[4]) is unused and will be removed from module sintesis_stackTower.
+WARNING: [Synth 8-3332] Sequential element (displays_inst/display_reg[3]) is unused and will be removed from module sintesis_stackTower.
+WARNING: [Synth 8-3332] Sequential element (displays_inst/display_reg[2]) is unused and will be removed from module sintesis_stackTower.
+WARNING: [Synth 8-3332] Sequential element (displays_inst/display_reg[1]) is unused and will be removed from module sintesis_stackTower.
+WARNING: [Synth 8-3332] Sequential element (displays_inst/display_reg[0]) is unused and will be removed from module sintesis_stackTower.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -236,37 +240,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -284,12 +288,12 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    32|
-|3     |LUT1   |     6|
+|3     |LUT1   |     7|
 |4     |LUT2   |    48|
-|5     |LUT3   |    26|
-|6     |LUT4   |    82|
-|7     |LUT5   |    15|
-|8     |LUT6   |    34|
+|5     |LUT3   |    27|
+|6     |LUT4   |    77|
+|7     |LUT5   |    10|
+|8     |LUT6   |    36|
 |9     |FDCE   |   108|
 |10    |FDPE   |    24|
 |11    |FDRE   |    36|
@@ -300,28 +304,28 @@ Report Cell Usage:
 |16    |OBUF   |    27|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1470.211 ; gain = 608.684
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1415.586 ; gain = 502.469
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1415.586 ; gain = 552.633
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1470.211 ; gain = 504.211
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1470.211 ; gain = 608.684
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1415.586 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1470.211 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1415.586 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1470.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   LD => LDCE: 23 instances
   LDP => LDPE: 1 instance 
 
-Synth Design complete | Checksum: cdf2db73
+Synth Design complete | Checksum: 2a9ad22a
 INFO: [Common 17-83] Releasing license: Synthesis
-67 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+65 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1415.586 ; gain = 933.699
-INFO: [Common 17-1381] The checkpoint 'C:/hlocal/TC/stackTower_v1.4/stackTower_v1.4.runs/synth_1/sintesis_stackTower.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1470.211 ; gain = 988.043
+INFO: [Common 17-1381] The checkpoint 'C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/synth_1/sintesis_stackTower.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file sintesis_stackTower_utilization_synth.rpt -pb sintesis_stackTower_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 31 15:11:11 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 31 15:30:39 2023...
