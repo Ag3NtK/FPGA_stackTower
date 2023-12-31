@@ -5,4 +5,4 @@ stackTower_v1.3 Tiene la selección de dificultad implementado con el enable_cam
 
 stackTower_v1.3.1 Tiene el componente "Divisor" mejor implementado (más eficiente).
 
-stackTower_v1.4 Tiene la función de ver el nivel que se selecciona en un display de 7 segmentos solo en el S0
+stackTower_v1.4 Tiene la función de ver la dificultad que se selecciona en un display de 7 segmentos, solo se puede cambiar de dificultad en el estado S0
