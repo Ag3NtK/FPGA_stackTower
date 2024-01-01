@@ -19,14 +19,14 @@ architecture Behavioral of stackTower is
 
     component controller 
         Port (
-        rst: in std_logic;
-        clk: in std_logic;
-        jugar: in std_logic;    -- Boton
-        inicio: in std_logic;   -- Boton
-        fallo: in std_logic;
-        puntuacion: in std_logic_vector(3 downto 0);
-        contador2seg: in std_logic_vector(3 downto 0);
-        enables: out std_logic_vector(6 downto 0)
+            rst: in std_logic;                              -- Botón reset
+            clk: in std_logic;                              -- Reloj
+            jugar: in std_logic;                            -- Botón
+            inicio: in std_logic;                           -- Botón
+            fallo: in std_logic;                            -- Señal de fallo
+            puntuacion: in std_logic_vector(3 downto 0);    -- Puntuación
+            contador2seg: in std_logic_vector(3 downto 0);  -- El número que está contando el contador2seg
+            enables: out std_logic_vector(6 downto 0)       -- Los enables del programa (enable_contador_2seg, mux_leds, sumador, cambio_dificultad)
         ); 
     end component;
     

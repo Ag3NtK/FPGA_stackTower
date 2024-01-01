@@ -3,12 +3,12 @@ use IEEE.std_logic_1164.all;
 USE IEEE.std_logic_unsigned.ALL;
 
 entity divisor is
-    port (
-        rst: in std_logic;
-        clk_entrada: in std_logic;      -- reloj de entrada de la entity superior
-        dificultad: in std_logic_vector (1 downto 0);
-        clk_dificultad, clk_4Hz: out std_logic    -- reloj para la secuencia de juego y reloj para la secuencia de ganar, perder, pausa 
-    );
+    Port (        
+        rst: in std_logic;                              -- Reset
+        clk_entrada: in std_logic;                      -- Reloj
+        dificultad: in std_logic_vector (1 downto 0);   -- La dificultad
+        clk_dificultad, clk_4Hz: out std_logic          -- Salida del reloj para la secuencia de juego y reloj para la secuencia de ganar, perder, pausa 
+        );
 end divisor;
 
 architecture divisor_arch of divisor is
@@ -21,13 +21,13 @@ begin
 
   contador: process(rst, clk_entrada)
     begin
-        if (rst='1') then
+        if (rst='1') then                               -- Reseta a todo
             cuenta<= (others =>'0');
             cuenta_dificultad<= (others =>'0');
             clk_dificultad_aux <= '0';
             clk_4Hz_aux <= '0';
         elsif(rising_edge(clk_entrada)) then
-            if (cuenta="0001011111010111100001000000") then 
+            if (cuenta="0001011111010111100001000000") then     -- CLK de las secuencias de ganar, perder y quietos
                 clk_4Hz_aux <= '1';
                 cuenta<= (others =>'0');
             else
@@ -36,7 +36,7 @@ begin
             end if;
             
             if dificultad = "00" then                               -- Según la dificultad cambia la cuenta_final y así va más rápido o más lento
-                cuenta_final <= "0000101111101011110000100000";
+                cuenta_final <= "0000101111101011110000100000";     -- CLK de la secuencia de juego
             elsif dificultad = "01" then
                 cuenta_final <= "0000010111110101111000010000";
             elsif dificultad = "10" then
