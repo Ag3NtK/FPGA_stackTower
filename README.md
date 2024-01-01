@@ -10,3 +10,5 @@ stackTower_v1.4 Tiene la función de ver la dificultad que se selecciona en un d
 stackTower_v1.4.1 Los leds de 7 segmentos entre la puntuación y la dificultad están apagados, y código más eficiente/limpio.
 
 stackTower_v2 Listo para la entrega, con lo que creo que el código justo y necesario, nada sin usar (o eso creo).
+
+Faltaría hacer la documentación de lo que hemos hecho, el dibujo de la ruta de datos y controller, y el dibujo del diagrama de estados, comprobar que está bien.
