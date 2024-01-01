@@ -19,14 +19,14 @@ architecture Behavioral of sintesis_stackTower is
 
     component stackTower
         Port (
-            rst: in  std_logic;
-            clk: in  std_logic;
-            jugar: in  std_logic;
-            inicio: in  std_logic;
-            sw_dificultad: in std_logic_vector (1 downto 0);
-            dificultad: out std_logic_vector (1 downto 0);
-            puntuacion: out std_logic_vector(3 downto 0);
-            leds: out std_logic_vector (15 DOWNTO 0)   
+            rst: in std_logic;                              -- Botón reset
+            clk: in std_logic;                              -- Reloj
+            jugar: in std_logic;                            -- Botón
+            inicio: in std_logic;                           -- Botón
+            sw_dificultad: in std_logic_vector (1 downto 0);-- Switches con la dificutlad
+            dificultad: out std_logic_vector (1 downto 0);  -- La dificultad solo actualizada en S0
+            puntuacion: out std_logic_vector(3 downto 0);   -- La puntuación
+            leds: out std_logic_vector (15 DOWNTO 0)        -- Los leds encima de los switches
         );
         end component ;
 
@@ -43,22 +43,22 @@ architecture Behavioral of sintesis_stackTower is
     
     component displays is
          Port ( 
-            rst : in STD_LOGIC;
-            clk : in STD_LOGIC;       
-            digito_0 : in  STD_LOGIC_VECTOR (3 downto 0);
-            digito_1 : in  STD_LOGIC_VECTOR (3 downto 0);
-            display : out  STD_LOGIC_VECTOR (6 downto 0);
-            display_enable : out  STD_LOGIC_VECTOR (3 downto 0)
-         );
+        rst : in STD_LOGIC;                                     -- Reset
+        clk : in STD_LOGIC;                                     -- Reloj
+        digito_0 : in  STD_LOGIC_VECTOR (3 downto 0);           -- Puntuación
+        digito_1 : in  STD_LOGIC_VECTOR (3 downto 0);           -- Dificultad
+        display : out  STD_LOGIC_VECTOR (6 downto 0);           -- Salida para los displays_7seg
+        display_enable : out  STD_LOGIC_VECTOR (3 downto 0)     -- Enables para los displays_7seg
+     );
 end component;
     
     
-    signal s_displays : std_logic_vector (3 DOWNTO 0);
-    signal jugar, inicio, fallo: std_logic;
-    signal puntuacion: std_logic_vector (3 DOWNTO 0);
-    signal reset_n:  std_logic;
-    signal dificultad: std_logic_vector (1 downto 0);
-    signal dificultad_display: std_logic_vector(3 downto 0);
+    signal s_displays : std_logic_vector (3 DOWNTO 0);          -- Enables de los displays
+    signal jugar, inicio, fallo: std_logic;                     -- Botón jugar, botón inicio y la señal fallo
+    signal puntuacion: std_logic_vector (3 DOWNTO 0);           -- Puntuación
+    signal reset_n:  std_logic;                                 
+    signal dificultad: std_logic_vector (1 downto 0);           -- La dificultad en los switches
+    signal dificultad_display: std_logic_vector(3 downto 0);    -- Dificutlad actualizada en S0
     
 begin
     

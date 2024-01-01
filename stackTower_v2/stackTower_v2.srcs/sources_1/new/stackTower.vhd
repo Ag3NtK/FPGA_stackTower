@@ -4,14 +4,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity stackTower is
         Port (
-            rst: in  std_logic;
-            clk: in  std_logic;
-            jugar: in  std_logic;
-            inicio: in  std_logic;
-            sw_dificultad: in std_logic_vector (1 downto 0);
-            dificultad: out std_logic_vector (1 downto 0);
-            puntuacion: out std_logic_vector(3 downto 0);
-            leds: out std_logic_vector (15 DOWNTO 0) 
+            rst: in std_logic;                              -- Botón reset
+            clk: in std_logic;                              -- Reloj
+            jugar: in std_logic;                            -- Botón
+            inicio: in std_logic;                           -- Botón
+            sw_dificultad: in std_logic_vector (1 downto 0);-- Switches con la dificutlad
+            dificultad: out std_logic_vector (1 downto 0);  -- La dificultad solo actualizada en S0
+            puntuacion: out std_logic_vector(3 downto 0);   -- La puntuación
+            leds: out std_logic_vector (15 DOWNTO 0)        -- Los leds encima de los switches
         );
 end stackTower;
 
@@ -31,16 +31,16 @@ architecture Behavioral of stackTower is
     end component;
     
     component ruta_datos 
-        Port (
-            rst: IN std_logic;
-            clk: IN std_logic;
-            enables: IN std_logic_vector (6 downto 0);
-            sw_dificultad: in std_logic_vector(1 downto 0);
-            dificultad: out std_logic_vector (1 downto 0);
-            contador2seg: OUT std_logic_vector (3 downto 0);
-            fallo: out std_logic;
-            puntuacion: out std_logic_vector(3 downto 0);
-            leds: OUT std_logic_vector (15 downto 0)
+        Port ( 
+            rst: IN std_logic;                                  -- Reset
+            clk: IN std_logic;                                  -- Reloj
+            enables: IN std_logic_vector (6 downto 0);          -- Los enables del programa (enable_contador_2seg, mux_leds, sumador, cambio_dificultad)
+            sw_dificultad: in std_logic_vector(1 downto 0);     -- Entrada de la dificultad de los switches de la placa
+            dificultad: out std_logic_vector (1 downto 0);      -- Salida de la dificulta que solo se actualiza en el estado S0
+            contador2seg: OUT std_logic_vector (3 downto 0);    -- Salida del contador_2seg
+            fallo: out std_logic;                               -- Salida de si el jugador ha fallado
+            puntuacion: out std_logic_vector(3 downto 0);       -- Salida de la puntuación
+            leds: OUT std_logic_vector (15 downto 0)            -- Salida de los 16 leds encima de los switches en la placa
         ); 
     end component;
 
