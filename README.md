@@ -8,3 +8,5 @@ stackTower_v1.3.1 Tiene el componente "Divisor" mejor implementado (más eficien
 stackTower_v1.4 Tiene la función de ver la dificultad que se selecciona en un display de 7 segmentos, solo se puede cambiar de dificultad en el estado S0.
 
 stackTower_v1.4.1 Los leds de 7 segmentos entre la puntuación y la dificultad están apagados, y código más eficiente/limpio.
+
+stackTower_v2 Listo para la entrega, con lo que creo que el código justo y necesario, nada sin usar (o eso creo).
