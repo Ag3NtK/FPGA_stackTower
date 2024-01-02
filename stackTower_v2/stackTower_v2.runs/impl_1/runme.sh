@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/impl_1'
+HD_PWD='C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log sintesis_stackTower.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source sintesis_stackTower.tcl -notrace
 
 

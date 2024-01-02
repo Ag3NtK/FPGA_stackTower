@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun Dec 31 15:30:07 2023
-# Process ID: 17264
-# Current directory: C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/synth_1
+# Start of session at: Tue Jan  2 16:42:12 2024
+# Process ID: 12820
+# Current directory: C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.runs/synth_1
 # Command line: vivado.exe -log sintesis_stackTower.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sintesis_stackTower.tcl
-# Log file: C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/synth_1/sintesis_stackTower.vds
-# Journal file: C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/synth_1\vivado.jou
-# Running On: DESKTOP-490OS2L, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34118 MB
+# Log file: C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.runs/synth_1/sintesis_stackTower.vds
+# Journal file: C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.runs/synth_1\vivado.jou
+# Running On: DESKTOP-1QKK3LH, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 17055 MB
 #-----------------------------------------------------------
 source sintesis_stackTower.tcl -notrace

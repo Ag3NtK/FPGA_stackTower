@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="63" Path="C:/hlocal/TC/stackTower_v2/stackTower_v2.xpr">
+<Project Product="Vivado" Version="7" Minor="63" Path="C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="96e72dbe3a2a411c8528ca35f5d69df3"/>
@@ -166,6 +166,12 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../hlocal/TC/ProyectoFinal/ProyectoFinal.srcs/sources_1/new/ruta_datos.vhd"/>
           <Attr Name="ImportTime" Val="1703677365"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/selector_dif.vhd">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

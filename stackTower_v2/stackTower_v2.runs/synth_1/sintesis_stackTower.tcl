@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.runs/synth_1/sintesis_stackTower.tcl"
+  variable script "C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.runs/synth_1/sintesis_stackTower.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,29 +78,30 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.cache/wt [current_project]
-set_property parent.project_path C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.xpr [current_project]
+set_property webtalk.parent_dir {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.cache/wt} [current_project]
+set_property parent.project_path {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo c:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.cache/ip [current_project]
+set_property ip_output_repo {c:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/biestable.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/contadorMod10.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/controller.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/conv_7seg.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/debouncer.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/displays.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/divisor.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/generador_secuencias.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/registro_desplazamiento.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/ruta_datos.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/stackTower.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sumadorPuntuacion.vhd
-  C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/sources_1/new/sintesis_stackTower.vhd
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/biestable.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/contadorMod10.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/controller.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/conv_7seg.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/debouncer.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/displays.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/divisor.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/generador_secuencias.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/registro_desplazamiento.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/ruta_datos.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/selector_dif.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/stackTower.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/sumadorPuntuacion.vhd}
+  {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/sources_1/new/sintesis_stackTower.vhd}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -111,12 +112,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/constrs_1/new/pines_proyecto_final.xdc
-set_property used_in_implementation false [get_files C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/constrs_1/new/pines_proyecto_final.xdc]
+read_xdc {{C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/constrs_1/new/pines_proyecto_final.xdc}}
+set_property used_in_implementation false [get_files {{C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/constrs_1/new/pines_proyecto_final.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/hlocal/TC/stackTower_v1.4.1/stackTower_v1.4.1.srcs/utils_1/imports/synth_1/sintesis_stackTower.dcp
+read_checkpoint -auto_incremental -incremental {C:/Trabajo/Final de TOC/FPGA_stackTower-main/FPGA_stackTower-main/stackTower_v2/stackTower_v2.srcs/utils_1/imports/synth_1/sintesis_stackTower.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

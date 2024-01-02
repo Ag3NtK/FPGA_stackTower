@@ -56,6 +56,14 @@ architecture Behavioral of ruta_datos is
         salida: out std_logic_vector(3 downto 0)        -- Salida de la suma realizada por el sumador
     );
     end component;
+    
+    component selector_dif is
+    Port (  
+        rst, clk, enable: in std_logic;                 --Reset, reloj y señal control
+        selec: in std_logic_vector(1 downto 0);         --Selector de dificultad
+        dificultad: out std_logic_vector(1 downto 0)    --Dificultad final
+    );
+    end component;
 
     signal enablesAux: std_logic_vector (6 downto 0); -- Vector con los enables de los contadores y el multiplexor
 
@@ -82,11 +90,6 @@ begin
 
     SUMA_PUNTUACION: sumadorPuntuacion port map(rst, clk, sumador, suma, suma);
     
-    wol: process(enablesAux(6))     --  Cuando el enable cambio dificutad está activo(en S0) cambia la dificultad a lo que ponían los switches
-        begin
-            if enablesAux(6) = '1' then
-                dificultad_aux <= sw_dificultad;
-            end if;
-    end process wol;
+    SELECTOR_DIFICULTAD: selector_dif port map(rst, clk, cambio_dificultad, sw_dificultad, dificultad_aux);
     
 end Behavioral;
