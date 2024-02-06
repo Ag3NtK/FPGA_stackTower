@@ -12,3 +12,5 @@ stackTower_v1.4.1 Los leds de 7 segmentos entre la puntuación y la dificultad e
 stackTower_v2 Listo para la entrega, con lo que creo que el código justo y necesario, nada sin usar (o eso creo). Todas las líneas y componentes comentados con lo que hace cada uno.
 
 Faltaría hacer la documentación(Podría decirse que está hecha con todos los comentarios del vivado, línea por línea) de lo que hemos hecho, el dibujo de la ruta de datos y controller.
+
+Video del funcionamiento del juego stackTower en la FPGA Basys 3: https://youtu.be/KThwzuLS8rc
