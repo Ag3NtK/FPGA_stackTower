@@ -1,0 +1,57 @@
+MEMORIA PROYECTO DE TC
+Daniel Martín del Castillo, Javier Pedrajas
+
+Nuestro proyecto se basa en una versión de un juego de móvil llamado “Stack tower”.
+El juego consiste en una grúa que va dejando caer bloques de edificio uno encima del otro. Si el jugador falla y no lo deja caer correctamente el juego termina.
+Para recrear el bloque que se balancea esperando a ser soltado hemos usado los leds. Además, hemos usado 2 switches para seleccionar la dificultad, 3 botones para controlar el juego y los displays para mostrar la dificultad seleccionada y la puntuación de la partida.
+
+⦁	COMPONENTES DEL JUEGO
+-Sintesis_StackTower
+	Debouncer1	-->	Debouncer para el botón jugar.
+	Debouncer2	-->	Debouncer para el botón inicio.
+	StackTower	-->	Contiene el juego.
+	Divisor 	-->	Tiene como entrada la dificultad, introducida por 2   
+                                                     switches y tiene como salida una salida de reloj para la 
+secuencia de juego y una salida de reloj para la
+ secuencia de ganar, perder y pausa.
+
+-Para hacer la ruta de datos hemos usado:
+
+	Generador_de_secuencias	-->	Contiene los componentes que realizan la 
+secuencias de los leds. Y además realiza la
+ secuencia pausa.	
+Registro_desplazamiento	-->	Realiza la secuencia jugando, moviendo 
+los leds en la dirección que toque.
+	Biestable			-->	Realiza la secuencia gana, secuencia 
+pierde.
+	Contado_2seg			--> 	Cuenta 2 segundos de espera.
+
+
+Para contar la puntuación:
+Sumador_puntuación	--> 	Se encarga de sumar o resetear la 
+puntuación.
+
+
+-Controlador	-->	Realiza la secuencia de juego (explicado en el diagrama de estados). 
+
+ 
+La ruta de datos y el controlador se comunican mediante una señal de control que se encarga de activar y desactivar los diferentes componentes.
+	
+
+-Para mostrar la dificultad y la puntuación:
+
+		Displays	Muestra la puntuación y la dificultad.
+
+		Conv7Seg	Muestra la dificultad.
+
+		Conv7Seg	Muestra la puntuación.
+
+ 
+⦁	FUNCIONAMIENTO
+
+En los displays se observa a la derecha la puntuación y la izquierda la dificultad.
+El reset se encuentra en el botón de la izquierda.
+Según comienza debemos elegir la dificultad del juego con los 2 primeros switches (0 la más fácil y 3 la más difícil). Una vez elegido pulsamos el botón de abajo y dará comienzo el juego.
+Los leds que representan el bloque empezarán a moverse y el objetivo será detenerlos con el botón derecho en el medio. Si lo conseguimos el juego sumará un punto, si fallamos el juego se acabará. 
+Podemos llegar a un máximo de 9 puntos, si se llega el nivel habrá sido superado.
+
